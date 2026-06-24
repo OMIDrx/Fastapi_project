@@ -32,15 +32,6 @@ def get_lastItem():
         return mylist[-1]
     else:
         return 'ERORRRRRRRRR'
-'''   
-@app.get('/lastItem')
-def get_lastItem(): 
-    if len(mylist) > 0 :
-        return {f'last item':{mylist[-1]}}
-    else:
-        return 'erorr'
-    
-'''
 
 @app.put('/update_item/{new_item}')
 def update_item (new_item:int,old_item:int):
